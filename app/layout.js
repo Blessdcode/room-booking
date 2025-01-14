@@ -2,6 +2,7 @@ import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/navigation";
 import styles from "@/styles";
+import Footer from "@/components/footer";
 
 const ibmPlexSans = IBM_Plex_Sans({
   display: "swap",
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
         <div className="xl:max-w-[1280px] w-full m-auto mt-6 md:mt-12">
           <Navigation />
           {children}
+          <Footer/>
         </div>
       </body>
     </html>
