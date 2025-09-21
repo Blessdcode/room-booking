@@ -5,7 +5,7 @@ import MyRoomsCards from "@/components/myRoomsCards";
 
 const pages = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-24">
+    <div className="grid grid-cols-1 md:grid-cols-3 p-0 gap-24">
       {Rooms.map((room) => (
         <MyRoomsCards
           key={room.$id}
